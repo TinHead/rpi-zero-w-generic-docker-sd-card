@@ -10,6 +10,6 @@ steps:
     - cd /usr/local/buildroot-2019.02.6; FORCE_UNSAFE_CONFIGURE=1 make BR2_EXTERNAL=/usr/local/rpi-sd-builder V=0
     - cp /usr/local/buildroot-2019.02.6/output/images/ /drone/src
 - name: publish sd image
-    image: alpine
-    commands:
-      - ls /drone/src
+  image: alpine
+  commands:
+    - ls /drone/src
