@@ -10,6 +10,12 @@ steps:
     - cd /usr/local/buildroot-2019.02.6; FORCE_UNSAFE_CONFIGURE=1 make BR2_EXTERNAL=/usr/local/rpi-sd-builder V=0
     - cp /usr/local/buildroot-2019.02.6/output/images/sdcard.img /drone/src
 - name: publish sd image
-  image: alpine
-  commands:
-    - ls /drone/src
+  image: plugins/github-release
+  settings:
+    api_key:
+      from_secret: github_token
+    files: 
+      - /drone/src/sdcard.img
+    title: Rpi Zero W generig sd image
+    checksum:
+      - md5
