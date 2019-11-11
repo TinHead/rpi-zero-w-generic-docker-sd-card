@@ -16,6 +16,6 @@ steps:
       from_secret: github_token
     files: 
       - /drone/src/sdcard.img
-    title: Rpi Zero W generig sd image
+    title: Rpi Zero W generic sd image
     checksum:
       - md5
