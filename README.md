@@ -29,8 +29,8 @@ If the file is found the network is added to wpa-supplicant and AP is disabled.
 
 # How to use?
 
-The default build id going to create a github release with the sd card image if the build is successful.
-You can downaload the images from the Releases section of this repo.
+The default build is going to create a github release with the sd card image if the build is successful.
+You can download the images from the Releases section of this repo.
 
 If you want to customize the build ... I'll add info on that later... 
 
